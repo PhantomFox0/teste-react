@@ -1,0 +1,30 @@
+.botao-saiba-mais {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.ilustracao {
+    height: auto;
+    width: 350px;
+}
+
+.conteudo-textual {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texto-introducao {
+    font-size: 35px;
+}
