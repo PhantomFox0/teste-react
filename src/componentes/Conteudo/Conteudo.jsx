@@ -1,6 +1,8 @@
 import { useState } from "react"
 import "./Conteudo.css"
 
+import programmerImg from "../../assets/programmer.png"
+
 function Conteudo() {
     const [artigo, setArtigo] = useState("")
 
@@ -22,7 +24,7 @@ function Conteudo() {
                 {artigo}
             </article>
         </section>
-        <img className="ilustracao" src="src/assets/programmer.png" alt=""></img>
+        <img className="ilustracao" src={programmerImg} alt=""></img>
       </main>
     )
 }

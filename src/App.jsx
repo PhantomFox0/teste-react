@@ -4,11 +4,15 @@ import Conteudo from "./componentes/Conteudo/Conteudo";
 import Projetos from "./componentes/Projetos/Projetos";
 import { useState } from "react";
 
+import facebookImg from './assets/facebook.png';
+import teslaImg from './assets/tesla.png';
+import viteImg from './assets/vite.png';
+
 function App() {
 	const [projetos, setProjetos] = useState([
-		{linkDoGithub: "https://github.com", caminhoDaImagem: "src/assets/facebook.png"},
-		{linkDoGithub: "https://github.com", caminhoDaImagem: "src/assets/tesla.png"},
-		{linkDoGithub: "https://github.com", caminhoDaImagem: "src/assets/vite.png"},
+		{linkDoGithub: 'https://github.com', caminhoDaImagem: facebookImg},
+		{linkDoGithub: 'https://github.com', caminhoDaImagem: teslaImg},
+		{linkDoGithub: 'https://github.com', caminhoDaImagem: viteImg},
 	])
   return (
     <div className="conteudo-principal">

@@ -8,11 +8,13 @@ function Projetos(props) {
             <h2>Projetos</h2>
             <ul className="lista-de-projetos">
                 {
-                    projetos.map( (projetoDaVez) => {
+                    projetos.map((projetoDaVez, index) => {
                         return (
-                            <li>
-                                <a href={projetoDaVez.linkDoGithub}> Link do Github</a>
-                                <img src={projetoDaVez.caminhoDaImagem} alt="" />
+                            <li key={index}>
+                                <a href={projetoDaVez.linkDoGithub} target="_blank" rel="noopener noreferrer">
+                                    Link do Github
+                                </a>
+                                <img src={projetoDaVez.caminhoDaImagem} alt="Logo do projeto" />
                             </li>
                         )
                     })
